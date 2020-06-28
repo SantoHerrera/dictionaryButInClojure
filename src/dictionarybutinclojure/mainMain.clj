@@ -1,21 +1,11 @@
 (ns dictionarybutinclojure.mainMain
  (:gen-class))
 
-
-;(defn getInput []
-; (do (print "What's your name? ")
-; (flush)
-;  (printInput (str (read-line)))))
-
-(defn nameOfFunctionHere 
- [here]
-  (println "fuck" here))
-
-(defn getNewUrl 
+(defn getNewUrl
  [word]
-  (println (str "will" "this " word "work")))
+ (println (str "https://dictionaryapi.com/api/v3/references/" "spanish" "/json/" word "?key=" "226a8d2c-2502-4efd-ac72-5a26eb317695")))
 
-(defn getInput [] 
- (do (print "What's your name? ")
+(defn getInput []
+ (do (print "Enter word to find definition")
   (flush)
-   (getNewUrl (str (read-line)))))
+  (getNewUrl (str (read-line)))))

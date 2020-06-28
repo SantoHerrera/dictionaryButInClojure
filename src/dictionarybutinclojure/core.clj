@@ -13,12 +13,9 @@
 ;(defn x (read-line))
 
 (defn -main [& args]
- (main/nameOfFunctionHere "your couch nigga"))
+ (main/getInput))
  ;(mainMain/test))
 
-(do (print "What's your name? ")
- (flush)
-  (read-line))
 
 
 ;(do (print "What's your name? ")
